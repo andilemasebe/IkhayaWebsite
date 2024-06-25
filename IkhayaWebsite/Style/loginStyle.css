@@ -1,0 +1,161 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background: url('https://afm-ags.org/wp-content/uploads/2018/02/AFM-WEB-BANNER-2000x535-01-2000x743.png') no-repeat center center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+    .left-side img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .left-side p {
+        text-align: center;
+        font-size: 1.1em;
+        margin: 0;
+    }
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .login-container img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    font-weight: 800;
+}
+
+button {
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .left-side {
+        order: 2;
+    }
+
+    .right-side {
+        order: 1;
+    }
+}
+
+.eye-icon {
+    /*position: absolute;
+    right: 5px;*/
+    cursor: pointer;
+}
+
+h2 {
+    color: #00ffff;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+    h2:after {
+        content: '';
+        width: 50px;
+        height: 3px;
+        background: #40E0D0;
+        display: block;
+        margin: 15px auto;
+        transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+
+    h2:hover:after {
+        width: 100px;
+    }

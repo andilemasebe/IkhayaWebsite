@@ -1,0 +1,418 @@
+login
+
+(EPIC) = Agriculture Sector Code  Menu Items, Scorecard Elements, Dashboard, Overall Scorecard Page, Scenario Analysis, Reports, User Permissions
+(FEATURE) = Login (Agriculture)
+(USER STORY) = Register - As a new user, I want to sign up by creating a username and password so that the system can remember my data. (Agriculture)
+
+
+(DESCRIPTION)
+=
+User Journey = 
+
+User Story: As a new user, I want to sign up by creating a username and password so that the system can remember me and my data. (Agriculture)
+
+Given: I have launched the Browser (Chrome, Edge, Firefox, Safari) 
+
+When: I Enter URL and Click Enter http://b-bbeeqa.ciyandza.co.za/LoginPage
+And: I click the Sign-Up Link
+
+And: I enter my Name
+
+And: I enter my Surname
+
+And: I enter my Email Address
+
+And: I enter my contact number
+
+Then: I click on the Submit Button
+
+
+
+Links: Sign Up
+
+
+
+Fields: 
+
+Name
+Surname
+Email Address
+Contact Number
+Buttons:
+Submit
+
+Business Rules.
+All fields are mandatory
+Use valid Email when signing up
+Only new Users can register, if the User is an existing user, an error message should pop out
+Test Data:
+Dev
+QA : http://b-bbeeqa.ciyandza.co.za/LoginPage
+Production: 
+
+
+
+
+(ACCEPTANCE CRITERIA)
+=
+
+Test Scenario 1: Test that the User can successfully Register (Agriculture)
+
+
+
+Given: I have launched the Browser (Chrome, Edge, Firefox, Safari) 
+
+When: I Enter URL and Click Enter http://b-bbeeqa.ciyandza.co.za/LoginPage
+
+And: I click the Sign Up Link
+
+And: I enter my Name
+
+And: I enter my Surname
+
+And: I enter my Email Address
+
+And: I enter my contact number
+
+Then: I click on the Submit Button
+
+
+Given that I am an existing user, When I go to the sign up page and a name, surname, email address, and a contact number and click on sign up, Then an error displays ("User already exists, Please login!!")
+
+Test Scenario 2: Test that the existing User Is unable to Register (Agriculture)
+
+Given: I have launched the Browser (Chrome, Edge, Firefox, Safari) 
+
+When: I Enter URL and Click Enter http://b-bbeeqa.ciyandza.co.za/LoginPage
+
+And: I click the Sign Up Link
+
+And: I enter my Name
+
+And: I enter my Surname
+
+And: I enter my Email Address
+
+And: I enter my contact number
+
+And: I click on the Submit Button
+
+Then: The error message displays ("User already exists, Please Login")
+
+
+
+Given that I am an existing user, When I go to the sign up page and don't fill all the mandatory fields and click on sign up, Then I get an error 
+
+
+
+Test Scenario 3: Test that a user cannot submit a form without completing all the mandatory fields.
+
+
+Given: I have launched the Browser (Chrome, Edge, Firefox, Safari) 
+
+When: I Enter URL and Click Enter http://b-bbeeqa.ciyandza.co.za/LoginPage
+
+And: I click the Sign Up Link
+
+And: I enter my Name
+
+And: I enter my contact number
+
+And: I click on the Submit Button
+
+Then: The error message displays ("Please fill all fields")
+
+
+
+
+Login
+Login - As a Registered User I want to login to the Ciyandza B-BBEE System, so that I can navigate the System (Agriculture)
+
+User Story: As a user, I want to be able to securely log in to the system so that my information can only be accessed by me (Agriculture)
+
+User Journey:
+
+Given: I have launched the Browser (Chrome, Edge, Firefox, Safari) 
+
+When: I Enter URL and Click Enter http://b-bbeeqa.ciyandza.co.za/LoginPage
+
+And: I Enter my valid login Credentials (username and password)
+
+And: I click reCAPTCHA
+
+
+And: I Click Login 
+
+Then: I am successfully logged in 
+
+
+
+Business Rules:
+The System should only allow Registered Users to login
+Users must login with their Valid Email Address and Password
+Buttons:
+Login
+Links
+Sign up
+Forgot Password
+
+
+
+Given that I am a registered user and I am in the Ciyandza B-BBEE System login page, and When enter my username and password and click on Log in, Then the data associated to my user should be accessible.
+
+Test Scenario 1: Test that the User can log in the Ciyandza B-BBEE System using their valid Login Credentials (Agriculture)
+
+Test Scenario 2: Test that when the User enters wrong login credentials, an error ("Invalid Email or Password entered") appears. (Agriculture)
+
+Given: I have launched the Browser (Chrome, Edge, Firefox, Safari) 
+When: I Enter URL and Click Enter http://b-bbeeqa.ciyandza.co.za/LoginPage
+
+And: I Enter my valid username & password
+
+And: I click reCAPTCHA
+
+
+And: I Click Login 
+
+Then: I am successfully logged in 
+
+
+
+Given that I am a registered user and logged out of Ciyandza B-BBEE System, When I go to the log in page and enter my username but an incorrect password and click on Log in, Then log in fails with an error message that specifies that the username or password is incorrect.
+
+Test Scenario 2: Test that when the User enters wrong login credentials, an error ("Invalid Email or Password entered") appears. (Agriculture)
+
+Given: I have launched the Browser (Chrome, Edge, Firefox, Safari) 
+
+When: I Enter URL and Click Enter http://b-bbeeqa.ciyandza.co.za/LoginPage
+
+And: I Enter invalid username and password
+
+And: I click reCAPTCHA
+
+
+And: I Click Login 
+
+Then: an error "Invalid Email or Password entered" appears.
+
+ 
+
+
+
+
+Forgot Password - As a user, I want to be able to recover the password to my account, so that I will be able to access my account in case I forgot the password. (Agriculture)
+
+User Journey:                                                                                                                 
+
+Test Scenario 1: Test that the User is able to recover Forgotten password
+
+Forgot Password - As a user, I want to be able to recover the password to my account, so that I will be able to access my account in case I forgot the password. (Agriculture)
+
+Given: I have launched the Browser (Chrome, Edge, Firefox, Safari) 
+
+When: I Enter URL and Click Enter http://b-bbeeqa.ciyandza.co.za/LoginPage
+
+And: I click Forgot Password
+
+And: I enter my valid email address
+
+And: I click the Submit button
+
+Then: The reset password link is sent to my emails
+
+
+
+Buttons:
+
+Submit
+Links
+Forgot Password
+Business Rules.
+Only registered Users are allowed to reset their passwords.
+
+
+
+
+
+Given that I am a registered user and I am in the Ciyandza B-BBEE System login page, and When I click the 'Forgot Password' link Then I get directed to enter my email address.
+
+Test Scenario 1: Test that when the User clicks on the Forgot Password link, they get directed to enter their email address (ICT)
+
+Given: I have launched the Browser (Chrome, Edge, Firefox, Safari) 
+
+When: I Enter URL and Click Enter http://b-bbeeqa.ciyandza.co.za/LoginPage 
+
+And: I click on the 'Forgot Password' link
+
+And: I get directed to another page to enter my email address
+
+
+Then: I Click Submit 
+
+
+
+Given I click the 'Forgot Password' link, When I get directed to enter my email address Then I receive a link on my emails to reset my password
+
+
+
+Test Scenario 2: Test that when the User clicks on the Forgot Password link, they get directed to enter their email address, and they receive a link on their email address to reset the password (Agriculture)
+
+
+
+
+Given: I have launched the Browser (Chrome, Edge, Firefox, Safari) 
+
+When: I Enter URL and Click Enter http://b-bbeeqa.ciyandza.co.za/LoginPage
+
+And: I click on the 'Forgot Password' link
+
+And: I fill in my registered email address
+
+And: I click the Submit button
+
+And:  I receive the link via the email
+
+
+And: I navigate through the link received in the email
+Then: The system enables the user to set a new password
+
+Given I have received the link on my email, When I reset my password Then the password is successfully been reset and I can log in the Ciyandza B-BBEE System
+
+Test Scenario 3: Test that when the User has reset the password, they are able to log in the Ciyandza B-BBEE System (Agriculture)
+
+
+Given: I have launched the Browser (Chrome, Edge, Firefox, Safari) 
+
+When: I Enter URL and Click Enter http://b-bbeeqa.ciyandza.co.za/LoginPage
+
+And: I click on the 'Forgot Password' link
+
+And: I fill in my registered email address
+
+And: I click the Submit button
+
+And:  I receive the link via the email
+
+And: I navigate through the link received in the email
+
+And: The system enables the user to set a new password
+And: I reset my password
+And: I log in using my updated Password
+Then: I am successfully logged in
+
+
+
+
+Dashboard - As a User I want to navigate to the Overall scorecard table on Dashboard so that I can be able to View information on B-BBEE Recognition Level by Clicking on the information Icon (Agriculture)
+
+
+
+User Journey 
+Open Browser (Chrome, Edge, Firefox, Safari)  
+Enter URL and Click Enter  
+Enter Valid Credentials 
+Click reCAPTCHA and Click Submit  
+Click Login 
+Dashboard page is displayed.   
+Overall Scorecard table is displayed. 
+Click on Info Icon next to B-BBEE Status Level 
+Pop-up page B-BBEE Recognition Level breakdown is displayed. 
+Click Close  
+Redirected to Dashboard:
+
+Subheadings:
+Elements
+Weighting Points
+Actual Points
+Fields:
+Ownership
+Management Control
+Employment Equity
+Skills Development
+Enterprise Supplier Development
+Socio-Economic Development
+Total Overall Points
+B-BBEE Status Level 
+B-BBEE Procurement Recognition Level 
+Priority Element Achieved: Yes/No
+Discounting Principle Applicable: Yes/No
+B-BBEE Procurement Recognition Level 
+B-BBEE Status Level 
+
+Overall Scorecard Table
+
+Discounting Principle Applicable: Yes/No
+Weighting Points	           Actual Points
+Ownership	25	
+Management Control	19	
+Skills Development	20	(5 Bonus Points)
+Enterprise Supplier Development	42	 (4 Bonus Points)
+Socio-Economic Development	5	
+Total Overall Points	111	
+B-BBEE Status
+Priority Element Achieved: Yes/No
+B-BBEE Achieved Status 		
+B-BBEE Recognition Level		
+
+
+
+
+
+
+
+Page:
+
+Pop ups page with B-BEE Recognition level page is displayed.
+B-BBEE Recognition Level Breakdown
+POINTS THRESHOLD	BEE STATUS LEVEL	% RECOGNITION
+100	Level 1	135%
+>= 95 < 100	Level 2	125%
+>= 90 < 95	Level 3	110%
+>= 80 < 90	Level 4	100%
+>= 75 < 80	Level 5	80%
+>= 70 < 75	Level 6	60%
+>= 55 < 70	Level 7	50%
+>= 40 < 55	Level 8	10%
+< 40	Non - Compliant	0%
+
+
+
+Test Scenario 1 :  Test that the user navigate to the Overall scorecard table on Dashboard
+
+Given: I Open Browser
+And: I Enter URL and Click Enter 
+And: I Enter valid Credentials
+And: I Click ReCAPTCHA Click Submit 
+And: I Click Login
+And: Dashboard is displayed 
+And: Overall Score page is displayed 
+And: I click Overall Score page
+And: I Click Info Icon next to B-BBEE Recognition Level
+And: Overall scorecard on Dashboard  is displayed 
+Then: I Click Close
+
+
+Test Scenario 2 : Test that the user can view the information on B-BBEE Recognition level by clicking on the information icon (Agriculture)
+
+Given: I Open Browser
+And: I Enter URL and Click Enter 
+And: I Enter valid Credentials
+And: I Click ReCAPTCHA Click Submit 
+And: I Click Login
+And: Dashboard is displayed 
+And: Overall Score page is displayed 
+And: I click Overall Score page
+And: I Click Info Icon next to B-BBEE Recognition Level
+And: B-BBEE Recognition Level breakdown is displayed
+Then : I Click Close
+
+
+
+
+
+
+
+
+Add Comments On the comment section
+
+

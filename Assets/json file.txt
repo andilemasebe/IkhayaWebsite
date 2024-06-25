@@ -1,0 +1,34 @@
+E:\IkhayaWebsite\images\blob-scene-haikei.png
+
+18,687 views  Oct 9, 2022  ASP.NET Core Web API
+The appsettings.json is used in .NET and .NET Core applications to read and get a value from the configuration file using the JSON format.
+
+Creating an ASP.NET Core C# project using the template creates the appsettings.json and creates the functionality to read it in the application. 
+
+This replaces the ConfigurationManager and web.config file that was used in .NET Framework projects.
+
+We'll show you the differences between web.config and appsettings.json. 
+
+In particular, we'll highlight the benefits of using appsettings.json for settings, such as being able to group similar values into a section. We'll also show you how to store settings with different object types, such as an integer, or a boolean.
+
+From there, it can be used with IConfiguration in an ASP.NET Core web app to get a value, or to get a section. We'll show you how to read a value from appsettings.json, and render it through an ASP.NET Core web app.
+
+This is part 1 of our appsettings.json course. The full playlist is here:
+   • AppSettings.json course  
+
+💻 Download the code sample for this demo 💻
+https://www.roundthecode.com/dotnet-c...
+
+📖 Learn .NET and C# with our online courses 📖
+https://www.roundthecode.com/dotnet-c...
+
+► Chapters
+0:00 What is AppSettings.json?
+0:24 Learn .NET with our online courses
+0:34 Problem with AppSettings in web.config
+1:17 AppSettings.json in ASP.NET Core
+1:44 Use configuration in Program.cs
+2:45 Use configuration in ASP.NET Core Web API
+5:00 Preview of next part
+
+#appsettings #dotnetcore #csharp

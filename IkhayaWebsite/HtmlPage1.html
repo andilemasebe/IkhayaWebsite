@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+
+
+</head>
+<body>
+
+    <!-- 2. Bible Verse Request Modal-->
+    <div id="verseModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Verse</h2>
+            <form id="forgotPasswordForm">
+                <div class="form-group">
+                    <p>
+                        19 Go ye therefore, and teach all nations,
+                        baptizing them in the name of the Father, and of the Son, and of the Holy Ghost:
+                    </p>
+                    <p>
+                        20 Teaching them to observe all things whatsoever I have commanded you: and, lo,
+                        I am with you alway, even unto the end of the world.
+                    </p>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#" id="verseLink">Matthew 28:19-20?</a>
+
+    <script>
+        // Add this to script.js
+        document.getElementById('verseLink').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('verseModal').style.display = 'block';
+        });
+
+        document.getElementById('closeModal').addEventListener('click', function () {
+            document.getElementById('verseModal').style.display = 'none';
+        });
+
+        document.getElementById('forgotPasswordForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const email = document.getElementById('forgotEmail').value;
+
+            if (email.length === 0) {
+                alert('Email is required');
+                return;
+            }
+
+            try {
+                const response = await fetch('http://localhost:5000/api/PasswordReset', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email })
+                });
+                const data = await response.text();
+                alert(data);
+            } catch (error) {
+                alert('Error requesting password reset');
+            }
+
+            document.getElementById('verseModal').style.display = 'none';
+        });
+
+    </script>
+</body>
+</html>
