@@ -1,23 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ClothingSite.aspx.cs" Inherits="IkhayaWebsite.ClothingSite" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm3.aspx.cs" Inherits="IkhayaWebsite.WebForm3" %>
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title></title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <!-- Load an icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<%--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>--%>
-
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    </form>
+</body>
+</html>
 
   <style>
   
@@ -1233,7 +1228,7 @@ a{
 
 }
 
-@media(max-width:1024px){
+@media(max-width:1200px){
 
    .category-container{
 
@@ -1367,7 +1362,7 @@ a{
 
   padding: 25px 20px;
 
-  border: 1px solid rgb(211,211,2110.08);
+  border: 1px solid (211,211,2110.08);
 
  }
 
@@ -1529,7 +1524,7 @@ a{
 
 }
 
-@media(max-width:780px){
+@media(max-width:724px){
 
  .logo{
 
@@ -1567,7 +1562,7 @@ a{
 
 }
 
-@media(max-width:480px){
+@media(max-width:500px){
 
  .category-container{
 
@@ -1593,7 +1588,7 @@ a{
 
 }
 
-@media(max-width:480px){
+@media(max-width:400px){
 
  .footer-container{
 
@@ -1802,341 +1797,9 @@ label {
 
     </style>
 
-</head>
-<body>
-
-<div class="jumbotron home1 text-center" style="margin-bottom:0">
-  <h1>Clothing</h1>
-  <p>Storage: Store clothing in a cool, dry place. Use hangers for garments prone to wrinkling and fold others neatly!</p>
-</div>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
- 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="Navigation">
-      <a href="#" class="logo"><i class="fa fa-shield"></i></a>
-      <input type="checkbox" class="Menu-btn" id="Menu-btn">
-      <label for="Menu-btn" class="Menu-icon">
-        <span class="nav-icon"><a href="#" class="user"><i class="fa fa-bars"></i></a></span>
-      </label>
-      <ul class="Menu">
-	  
-        <li><a href="#" class="active">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Kids</a></li>
-          </ul>
-        </li>
-		
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Clothing</a></li>
-            <li><a href="#">Shoes</a></li>
-            <li><a href="#">Accessories</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Contacts</a></li>
-		
-      </ul>
-      <div class="right-elements">
-          <a href="#" class="search"><i class="fa fa-search"></i></a>
-          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
-          <a href="#" class="user"><i class="fa fa-user"></i></a>
-        </div>
-    </div>
-  </div>
-</nav>
-	  
-    </div>
-</nav>
-
-<div class="container">
-  <div class="row">
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
-  </div>
-</div>
-
-<!-- MAIN (Center website) -->
-<div class="main">
-
-<!-- <h1>MYLOGO.COM</h1> -->
-<hr>
-
-<h2 style="text-align:center">OUR TEAM</h2>
-<p>Clothing refers to garments worn on the body, typically made from fabrics or textiles. Here are some key aspects of clothing:</p>
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column">
-    <div class="content">
-      <img src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Mountains" style="width:100%">
-      <h3>Casual Wear</h3>
-      <p>Casual Wear: Comfortable clothing for everyday use, like jeans, t-shirts, and sneakers. Formal Wear: Attire for formal events, such as suits, gowns, and dress shoes</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://images.pexels.com/photos/8400225/pexels-photo-8400225.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Lights" style="width:100%">
-      <h3>Business Attire</h3>
-      <p>Business Attire: Professional clothing like blazers, dress pants, skirts, and blouses.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://images.pexels.com/photos/2517865/pexels-photo-2517865.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Nature" style="width:100%">
-      <h3>Sportswear</h3>
-      <p>Sportswear: Athletic wear designed for physical activities, including tracksuits, yoga pants, and sneakers.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="https://images.pexels.com/photos/8581003/pexels-photo-8581003.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Mountains" style="width:100%">
-      <h3>Outerwear</h3>
-      <p>Outerwear: Garments worn outdoors, such as coats, jackets, and raincoats.</p>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
-
-<div class="content">
-  <img src="https://images.pexels.com/photos/9218538/pexels-photo-9218538.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Bear" style="width:100%">
-  <h3>Types of Clothing</h3>
-    <p>Casual Wear: Comfortable clothing for everyday use, like jeans, t-shirts, and sneakers.</p>
-    <p>Formal Wear: Attire for formal events, such as suits, gowns, and dress shoes.</p>
-    <p>Business Attire: Professional clothing like blazers, dress pants, skirts, and blouses.</p>
-    <p>Sportswear: Athletic wear designed for physical activities, including tracksuits, yoga pants, and sneakers.</p>
-</div>
-</div>
 
 
-<!-- START LATEST COLLECTION -->
- <section id="Latest">
-  <h3>Latest Collection</h3>
-  <div class="Latest-box-container">
-      <div class="Latest-box">
-       <div class="Latest-img">
-        <img src="https://images.pexels.com/photos/5418938/pexels-photo-5418938.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" />
-        <div class="Latest-label">New</div>
-        </div>
-        <div class="Latest-text">
-         <strong> We sell the Best and Quality clothes all for you!</strong>
-       <span>Best | Quality</span>
-       <a href="#">Read More</a>
-       </div>
-      </div>
 
-         <div class="Latest-box">
-       <div class="Latest-img">
-        <img src="https://images.pexels.com/photos/16441563/pexels-photo-16441563/free-photo-of-man-in-suit-standing-with-woman-in-traditional-clothing.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" />
-        <div class="Latest-label">New</div>
-        </div>
-        <div class="Latest-text">
-         <strong> We sell the Best and Quality clothes all for you!</strong>
-       <span>Best | Quality</span>
-       <a href="#">Read More</a>
-       </div>
-      </div>
-
-       <div class="Latest-box">
-       <div class="Latest-img">
-        <img src="https://images.pexels.com/photos/11593470/pexels-photo-11593470.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" />
-        <div class="Latest-label">New</div>
-        </div>
-
-        <div class="Latest-text">
-         <strong> We sell the Best and Quality clothes all for you!</strong>
-       <span>Best | Quality</span>
-       <a href="#">Read More</a>
-       </div>
-      </div>
-  </div>
- </section>
- <!-- END LATEST COLLECTION -->
-
-    <!-- start testimionals -->
-	<section id="testimionals">
-		<div class="testimionals-bg">
-			<div class="container testimionals-bg-opacity">
-				<h2>TESTIMONIALS</h2>
-				<div><span class="fa fa-quote-left quotes" aria-hidden="true"></span>
-				</div>
-				<div id="slider-testimionals" class="carousel slide" data-ride="carousel">
-					<!-- indicators dot nav -->
-					<ol class="carousel-indicators">
-						<li data-target="#slider-testimionals" data-slide-to="0" class="active"></li>
-						<li data-target="#slider-testimionals" data-slide-to="1"></li>
-						<li data-target="#slider-testimionals" data-slide-to="2"></li>
-						<li data-target="#slider-testimionals" data-slide-to="3"></li>
-					</ol>
-					<!-- wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
-						<!-- start first testimional -->
-						<div class="item active">
-							<div class="row">
-								<div class="col-md-6 col-md-offset-3">
-									<div class="carousel-caption">
-										<p>"This robe is luxurious! It feels like a spa robe, and I love lounging in it. The quality is excellent, and it's super comfortable. Highly recommend!"</p>
-										<p class="client">Michael Johnson, COO, DEF Tech Solutions:</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- end first testimional -->
-
-						<!-- start second testimional -->
-						<div class="item">
-							<div class="row">
-								<div class="col-md-6 col-md-offset-3">
-									<div class="carousel-caption">
-										<p>"These pajamas are so cozy! The fabric is soft and breathable, making them perfect for a good night's sleep. The fit is comfortable and not too tight."</p>
-										<p class="client">Sarah Lee, Marketing Director, GHI Enterprises:</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- end second testimional -->
-
-						<!-- start third testimional -->
-						<div class="item">
-							<div class="row">
-								<div class="col-md-6 col-md-offset-3">
-									<div class="carousel-caption">
-										<p>"The colors are vibrant, and the material is soft and comfortable. It drapes beautifully and is perfect for special occasions." </p>
-										<p class="client">Jane Smith, CTO, XYZ Financial Services</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- end third testimional -->
-
-						<!-- start fourth and last testimional -->
-						<div class="item">
-							<div class="row">
-								<div class="col-md-6 col-md-offset-3">
-									<div class="carousel-caption">
-										<p>"This kimono is beautiful and authentic. The fabric is high quality, and the craftsmanship is exquisite. I received so many compliments when I wore it."</p>
-										<p class="client">Ana, Manager - Páginas Amarelas</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- end fourth and last testimional -->
-					</div>
-					<!-- end carousel -->
-				</div>
-				<!-- end slider bootstrap -->
-			</div>
-		</div>
-		<!-- end div container testimionals -->
-	</section>
-	<!-- end testimionals -->
-
-    <br />
-    <br />
-
-    
-    <!-- begin CONTACT section -->
-
-    <div class="section" data-anchor="contact">
-      <div class="content wow fadeInDown" data-wow-delay="0.2s">
-        <h2 style="text-align:center">CONTACT ME</h2>
-        <p style="text-align: center;">Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
-        <br>
-        <div class="contact-form">
-
-          <div id="form-messages">
-          </div>
-          <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
-            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
-              <input type="text" class="form-control" id="name" name="name" placeholder="NAME" data-error="Field can't be blank!" required>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
-            </div>
-
-            <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
-              <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" data-error="Field can't be blank!" required>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
-            </div>
-
-            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
-              <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
-            </div>
-
-            <div class="hidden">
-              <input type="text" class="form-control" id="human" name="human" placeholder="">
-            </div>
-            <div class="wow fadeInUp" data-wow-delay="1s">
-              <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
-            </div>
-          </form>
-          <br>
-        </div>
-      </div>
-    </div>
-    <!-- end CONTACT section -->
-
-<!-- <div class="jumbotron Footer text-center" style="margin-bottom:0"> -->
-  
- <footer>
-  <div class="footer-container">
-   <div class="footer-logo-container">
-    <div class="footer-logo">Clothing</div>
-    <span>Follow Us</span>
-    <div class="footer-social">
-     <a href="#"><i class="fa fa-linkedin"></i></a>
-     <a href="#"><i class="fa fa-instagram"></i></a>
-     <a href="#"><i class="fa fa-facebook"></i></a>
-     <a href="#"><i class="fa fa-twitter"></i></a>
-    </div>
-   </div>
-  <div class="footer-menu">
-    <div class="footer-menu-box"> 
-    <strong>product</strong>
-    <ul>
-     <li><a href="#">Women's latest cloth</a></li>
-     <li><a href="#">Men's latest cloth</a></li>
-     <li><a href="#">Kids latest cloth</a></li>
-    </ul>
-    </div>
-	
-   <div class="footer-menu">
-    <div class="footer-menu-box"> 
-    <strong>product</strong>
-    <ul>
-     <li><a href="#">Women's latest cloth</a></li>
-     <li><a href="#">Men's latest cloth</a></li>
-     <li><a href="#">Kids latest cloth</a></li>
-    </ul>
-    </div>
-
-   <div class="footer-menu">
-    <div class="footer-menu-box"> 
-	 <div class="form-inline">
-    <label for="email">Subscribe:</label>
-		<input type="email" id="email" placeholder="Enter email" name="email">
-		<button type="submit">Submit</button>
-   </div>
-  </div>
-  </div>
- </div>
-
- </footer>
- <span class="Copyright">Copyright © @2024. All Rights Reserved.Designed By Masebe Andile.</span>
-<!-- </div -->
-<!-- END MAIN -->
-</div>
-
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script>
 // When the user scrolls down 20px from the top of the document, show the button
@@ -2210,7 +1873,3 @@ function topFunction() {
             });
         });
     </script>
-
-</body>
-</html>
-

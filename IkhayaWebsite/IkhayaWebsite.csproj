@@ -129,6 +129,8 @@
     <Content Include="Script\loginScript.js" />
     <Content Include="Script\marques.js" />
     <Content Include="services.aspx" />
+    <Content Include="Shop.aspx" />
+    <Content Include="ShopContact.aspx" />
     <Content Include="StoreWebsite.aspx" />
     <Content Include="Style\indexStyle.css" />
     <Content Include="Style\login.css" />
@@ -140,6 +142,7 @@
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
     <Content Include="websiteLogin.aspx" />
     <Content Include="work.aspx" />
   </ItemGroup>
@@ -271,6 +274,20 @@
     <Compile Include="services.aspx.designer.cs">
       <DependentUpon>services.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Shop.aspx.cs">
+      <DependentUpon>Shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shop.aspx.designer.cs">
+      <DependentUpon>Shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopContact.aspx.cs">
+      <DependentUpon>ShopContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopContact.aspx.designer.cs">
+      <DependentUpon>ShopContact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="StoreWebsite.aspx.cs">
       <DependentUpon>StoreWebsite.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -305,6 +322,13 @@
     </Compile>
     <Compile Include="WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
     <Compile Include="websiteLogin.aspx.cs">
       <DependentUpon>websiteLogin.aspx</DependentUpon>

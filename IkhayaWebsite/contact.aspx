@@ -280,9 +280,6 @@ h2{
     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: ikhaya@home.com</p>
   </div>
   
-  <!-- Image of location/map -->
-  <!-- <img src="https://images.pexels.com/photos/1714340/pexels-photo-1714340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w3-image w3-greyscale" style="width:100%;margin:32px 0"> -->
-
   <div class="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28690.955896549836!2d28.136225616999763!3d-25.988711180225526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956e9c15696ae1%3A0x6a8054a3c6e038c8!2sKaalfontein%2C%20Midrand%2C%201632!5e0!3m2!1sen!2sza!4v1718353227142!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>

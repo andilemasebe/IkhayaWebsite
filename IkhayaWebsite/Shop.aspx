@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ClothingSite.aspx.cs" Inherits="IkhayaWebsite.ClothingSite" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Shop.aspx.cs" Inherits="IkhayaWebsite.Shop" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -262,7 +262,7 @@ a{
 .Menu li a{
  margin: 5px;
  padding: 5px 20px;
- color: #2e2e2e;
+ color: red;
  font-weight: 500;
  opacity: 0.4;
 }
@@ -278,7 +278,8 @@ a{
 
 .logo{
  font-size: 2.1rem;
- color: #414141;
+/* color: #414141;*/
+color: #000;
  text-transform: uppercase;
  letter-spacing: 0.5px;
  font-weight: 600;
@@ -296,11 +297,11 @@ a{
 }
 
 .right-elements a i{
- color: red;
+ color: #000;
 }
 
 .right-elements a:hover i{
- color: blue;
+ color: red;
  transition: all ease 0.3s;
 }
 
@@ -1060,15 +1061,10 @@ a{
  }
 
 .footer-logo-container{
-
  display: flex;
-
  flex-direction: column;
-
  justify-content: center;
-
  align-items: center;
-
 }
 
 .footer-logo{
@@ -1233,7 +1229,7 @@ a{
 
 }
 
-@media(max-width:1024px){
+@media(max-width:1200px){
 
    .category-container{
 
@@ -1367,7 +1363,7 @@ a{
 
   padding: 25px 20px;
 
-  border: 1px solid rgb(211,211,2110.08);
+  border: 1px solid (211,211,2110.08);
 
  }
 
@@ -1529,20 +1525,14 @@ a{
 
 }
 
-@media(max-width:780px){
-
+@media(max-width:724px){
  .logo{
-
   font-size: 1.5rem;
-
  }
 
  .main-text h1{
-
   font-size: 1.6rem;
-
   line-height: 35px;
-
  }
 
  #categories h2,
@@ -1567,7 +1557,7 @@ a{
 
 }
 
-@media(max-width:480px){
+@media(max-width:500px){
 
  .category-container{
 
@@ -1593,7 +1583,7 @@ a{
 
 }
 
-@media(max-width:480px){
+@media(max-width:400px){
 
  .footer-container{
 
@@ -1810,8 +1800,6 @@ label {
   <p>Storage: Store clothing in a cool, dry place. Use hangers for garments prone to wrinkling and fold others neatly!</p>
 </div>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
  
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -1845,16 +1833,14 @@ label {
 		
       </ul>
       <div class="right-elements">
-          <a href="#" class="search"><i class="fa fa-search"></i></a>
-          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
-          <a href="#" class="user"><i class="fa fa-user"></i></a>
-        </div>
+        <a href="#" class="search"><i class="fa fa-search"></i></a>
+        <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        <a href="#" class="user"><i class="fa fa-user"></i></a>
+      </div>
     </div>
   </div>
 </nav>
 	  
-    </div>
-</nav>
 
 <div class="container">
   <div class="row">
@@ -1959,6 +1945,7 @@ label {
  </section>
  <!-- END LATEST COLLECTION -->
 
+    
     <!-- start testimionals -->
 	<section id="testimionals">
 		<div class="testimionals-bg">
@@ -2050,8 +2037,7 @@ label {
         <br>
         <div class="contact-form">
 
-          <div id="form-messages">
-          </div>
+          <div id="form-messages"></div>
           <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
             <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
               <input type="text" class="form-control" id="name" name="name" placeholder="NAME" data-error="Field can't be blank!" required>
@@ -2213,4 +2199,3 @@ function topFunction() {
 
 </body>
 </html>
-
